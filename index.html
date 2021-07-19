@@ -2,8 +2,26 @@
 <html>
     <head>
         <title>My Webpage</title>
+        <Style>
+            #btnClickme{
+                padding:2%;
+            }
+
+            .texts{
+                font-family: Comic sans ms;
+                color: aqua;
+            }
+        </Style>
     </head>
     <body>
-        <h1>CMT</h1>
+        <div class="text" id="textsJS"></div>
+        <button id="btnClickme">Click me!</button>
+
+
+        <script>
+            document.getElementById('btnClickme').addEventListener('click', function(){
+                document.getElementById('textsJS').innerHTML = "Hello World!";
+            });
+        </script>
     </body>
 </html>
